@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <title>Weather Journal App</title>
+</head>
+
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light py-5">
+      <div class="container">
+        <a href="index.html" class="branding d-flex ms-5">
+          <img src="images/logo@2x.png" alt="" class="logo" width="64" height="38" />
+          <div class="logo-type ms-3">
+            <h1 class="site-title">Weather Journal App</h1>
+            <small class="site-description">tagline goes here</small>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="weather py-5">
+      <div class="w-75 mx-auto py-4 text-center">
+        <div class="find-zip-code position-relative">
+          <input type="number" placeholder="Enter Zipcode here ..." class="form-control" id="zip-code" />
+
+        </div>
+
+        <div class="feeling-today position-relative mt-2">
+          <input type="text" placeholder="How are you feeling today?" class="form-control" id="feeling-inpt" />
+
+        </div>
+        <button id="generate" class="btn btn-primary mt-3 px-5 p-3">
+          Generate
+        </button>
+      </div>
+
+      <div class="w-75 mx-auto py-4">
+        <div class="row forecasty ">
+          <div class="col-md-12 ">
+            <div class="day">
+              <div class="forecast-header" id="today">
+                <div class="date fw-bold h4 text-start">
+
+                </div>
+              </div>
+
+              <div class="forecast-content" id="current">
+                <div class="location"></div>
+                <div class="degree d-flex flex-wrap">
+                  <div><span class="temp"></span><sup>o</sup>C</div>
+
+                </div>
+
+              </div>
+
+              <div class="m-3 text-info">
+                <h5>Your Feelings: <span class="feeling"></span></h5>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="w-75 mx-auto py-5">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="subscribe-form position-relative">
+              <input type="text" class="form-control" placeholder="Enter your email to subscribe..." />
+              <button class="btn btn-primary position-absolute p-3">
+                Sucscribe
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-1 ms-5">
+            <div class="social-links ms-5">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="colophon my-4">
+          Copyright 2022. Designed by Mina Hany. All rights
+          reserved
+        </p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
